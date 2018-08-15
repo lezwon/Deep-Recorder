@@ -1,0 +1,5 @@
+__pycache__
+.dist
+.vscode
+env
+dataset.hdf5

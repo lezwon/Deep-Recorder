@@ -1,0 +1,5 @@
+pynput
+mss
+opencv-python
+h5py
+keyboard
