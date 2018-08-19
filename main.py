@@ -17,7 +17,7 @@ keyboard_listener.start_listening()
 mouse_listener.start_listening()
 
 while True:
-    time.sleep(0.3)
+    time.sleep(1)
     screenshot = screen_recorder.get_screenshot()
     keyboard_state = keyboard_listener.get_state()
     mouse_state = mouse_listener.get_state()

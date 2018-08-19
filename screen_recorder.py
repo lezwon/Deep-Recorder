@@ -12,6 +12,7 @@ class ScreenRecorder:
 
     def _take_screenshot(self):
         while True:
+            sleep(0.5)
             screenshot = self.screen.grab(self.screen.monitors[0])
             screenshot = np.array(screenshot)
             self._shot = cv2.resize(screenshot[:,:,:-1], dsize=(256, 256),
