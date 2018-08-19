@@ -1,6 +1,7 @@
-from mss import mss
 import cv2
 import numpy as np
+from mss import mss
+from time import sleep
 from threading import Thread
 
 class ScreenRecorder:

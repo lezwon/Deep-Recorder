@@ -17,12 +17,12 @@ keyboard_listener.start_listening()
 mouse_listener.start_listening()
 
 while True:
-    time.sleep(1)
+    time.sleep(0.3)
     screenshot = screen_recorder.get_screenshot()
-    keyboard_status = keyboard_listener.get_status()
-    mouse_status = mouse_listener.get_status()
-    data_handler.submit(screenshot, keyboard_status, mouse_status)
+    keyboard_state = keyboard_listener.get_state()
+    mouse_state = mouse_listener.get_state()
+    data_handler.submit(screenshot, keyboard_state, mouse_state)
     if keyboard.is_pressed('f12'):
         break
 
-print(len(keyboard_listener.get_status()))
+print(len(keyboard_listener.get_state()))

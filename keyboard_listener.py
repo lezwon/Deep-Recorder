@@ -15,7 +15,7 @@ class KeyboardListener:
     def _on_release(self, key):
         self._status.pop(key, None)
 
-    def get_status(self):
+    def get_state(self):
         return self._status.keys()
 
     def start_listening(self):

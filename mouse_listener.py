@@ -27,7 +27,7 @@ class MouseListener:
     def _on_scroll(self, x, y, dx, dy):
         self._status['scroll'] = dy
 
-    def get_status(self):
+    def get_state(self):
         status = copy.deepcopy(self._status)
         status['click'] = list(self._status['click'].keys())
         return status
